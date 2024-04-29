@@ -11,7 +11,7 @@
   
 
   
-  <link rel="stylesheet" href="{{url_for('css',filename='./style.css')}}">
+  <link rel="stylesheet" href="css/style.css">
 
  
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About Us</a>
+            <a href="#about" class="navbar-link">About Us</a>
           </li>
 
           <li>
@@ -57,15 +57,15 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Destinations</a>
+            <a href="#destination" class="navbar-link">Destinations</a>
           </li>
 
           <li>
-            <a href="/blog" class="navbar-link">Blog</a>
+            <a href="/Template/blog.html" class="navbar-link">Blog</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact Us</a>
+            <a href="#contact" class="navbar-link">Contact Us</a>
           </li>
 
         </ul>
@@ -89,14 +89,14 @@
       -->
 
       <section class="section hero"
-        style="background-image: url('{{url_for(filename='./Image/hero-bg-bottom.png')}}) url('{{url_for(filename='./Image/hero-bg-top.png')}})">
+        style="background-image: url('Image/hero-bg-bottom.png') url('/Image/hero-bg-top.png')">
         <div class="container">
 
-          <img src="{{url_for('Image',filename='./Image/shape-1.png')}}" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+          <img src="/Image/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
 
-          <img src="{{url_for('Image',filename='./Image/shape-2.png')}}" width="56" height="74" alt="Vector Shape" class="shape shape-2">
+          <img src="/Image/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
 
-          <img src="{{url_for('Image',filename='./Image/shape-3.png')}}" width="57" height="72" alt="Vector Shape" class="shape shape-3">
+          <img src="/Image/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
 
           <div class="hero-content">
 
@@ -109,15 +109,15 @@
             </p>
 
             <div class="btn-group">
-              <a href="/login" class="btn btn-primary">Log in</a>
+              <a href="Template/login.html" class="btn btn-primary">Log in</a>
 
-              <a href="#" class="btn btn-outline">Sign up</a>
+              <a href="Template/login.html" class="btn btn-outline">Sign up</a>
             </div>
 
           </div>
 
           <figure class="hero-banner">
-             <img src="{{url_for('Image',filename='./Image/hero-banner.png')}}" width="686" height="812" loading="lazy" alt="hero banner"class="w-100">
+             <img src="/Image/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"class="w-100">
                 
           </figure>
 
@@ -132,7 +132,7 @@
         - #DESTINATION
       -->
 
-      <section class="section destination">
+      <section class="section destination" id="destination">
         <div class="container">
 
           <p class="section-subtitle">Destinations</p>
@@ -145,7 +145,7 @@
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
-                  <img src="{{url_for('Image',filename='./Image/Nepal.jpg')}}" width="1140" height="1100" loading="lazy"
+                  <img src="/Image/Nepal.jpg" width="1140" height="1100" loading="lazy"
                     alt="Kathmandu, Nepal" class="img-cover">
                 </figure>
 
@@ -162,7 +162,7 @@
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
-                  <img src="{{url_for('Image',filename='./Image/destination-4.jpg')}}" width="1140" height="1100" loading="lazy"
+                  <img src="/Image/destination-4.jpg" width="1140" height="1100" loading="lazy"
                     alt="Beach, Goa" class="img-cover">
                 </figure>
 
@@ -179,7 +179,7 @@
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
-                  <img src="{{url_for('Image',filename='./Image/northest.jpg')}}" width="1110" height="480" loading="lazy"
+                  <img src="/Image/northest.jpg" width="1110" height="480" loading="lazy"
                     alt="Meghalaya, Northeast" class="img-cover">
                 </figure>
 
@@ -196,7 +196,7 @@
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
-                  <img src="{{url_for('Image',filename='./Image/ladakh.jpg')}}" width="1110" height="480" loading="lazy"
+                  <img src="/Image/ladakh.jpg" width="1110" height="480" loading="lazy"
                     alt="Leh, Jammu" class="img-cover">
                 </figure>
 
@@ -213,7 +213,7 @@
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
-                  <img src="{{url_for('Image',filename='./Image/delhi.jpg')}}" width="1110" height="480" loading="lazy"
+                  <img src="/Image/delhi.jpg" width="1110" height="480" loading="lazy"
                     alt="Delhi, India" class="img-cover">
                 </figure>
 
@@ -245,7 +245,7 @@
         - #ABOUT
       -->
 
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
 
           <div class="about-content">
@@ -317,7 +317,7 @@
           </div>
 
           <figure class="about-banner">
-            <img src="{{url_for('Image',filename='./Image/about-banner.png')}}" width="756" height="842" loading="lazy" alt="" class="w-100">
+            <img src="/Image/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
           </figure>
 
         </div>
@@ -345,8 +345,8 @@
 
                 <figure class="card-banner">
 
-                  <a href="#">
-                    <img src="{{url_for('Image',filename='./Image/popular-1.jpg')}}" width="740" height="518" loading="lazy"
+                  <a href="/Template/blog.html">
+                    <img src="/Image/blog-2.jpg" width="740" height="518" loading="lazy"
                       alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
                   </a>
 
@@ -364,11 +364,11 @@
 
                     <div class="author-wrapper">
                       <figure class="author-avatar">
-                        <img src="{{url_for('Image',filename='./Image/author-avatar.png')}}" width="30" height="30" alt="mr.mallik">
+                        <img src="/Image/author-avatar.png" width="30" height="30" alt="mr.mallik">
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">mr.mallik</a>
+                        <a href="/Template/blog.html" class="author-name">mr.mallik</a>
 
                         <p class="author-title">Admin</p>
                       </div>
@@ -379,12 +379,12 @@
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">
+                    <a href="/Template/blog.html">
                       A good traveler has no fixed plans and is not intent on arriving.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
+                  <a href="/Template/blog.html" class="btn-link">
                     <span>Read More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -400,8 +400,8 @@
 
                 <figure class="card-banner">
 
-                  <a href="#">
-                    <img src="{{url_for('Image',filename='./Image/blog-2.jpg')}}" width="740" height="518" loading="lazy"
+                  <a href="/Template/blog.html">
+                    <img src="/Image/blog-2.jpg" width="740" height="518" loading="lazy"
                       alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
                   </a>
 
@@ -419,11 +419,11 @@
 
                     <div class="author-wrapper">
                       <figure class="author-avatar">
-                        <img src="{{url_for('Image',filename='./Image/author-avatar.png')}}" width="30" height="30" alt="Jony bristow">
+                        <img src="/Image/author-avatar.png" width="30" height="30" alt="Jony bristow">
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">mr.sanjeet</a>
+                        <a href="/Template/blog.html" class="author-name">mr.sanjeet</a>
 
                         <p class="author-title">web developer</p>
                       </div>
@@ -434,12 +434,12 @@
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">
+                    <a href="/Template/blog.html">
                       A good traveler has no fixed plans and is not intent on arriving.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
+                  <a href="/Template/blog.html" class="btn-link">
                     <span>Read More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -455,8 +455,8 @@
 
                 <figure class="card-banner">
 
-                  <a href="#">
-                    <img src="{{url_for('Image',filename='./Image/hathi.jpg')}}" width="740" height="518" loading="lazy"
+                  <a href="/Template/blog.html">
+                    <img src="/Image/blog-2.jpg" width="740" height="518" loading="lazy"
                       alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
                   </a>
 
@@ -474,11 +474,11 @@
 
                     <div class="author-wrapper">
                       <figure class="author-avatar">
-                        <img src="{{url_for('Image',filename='./Image/author-avatar.png')}}" width="30" height="30" alt="Jony bristow">
+                        <img src="/Image/author-avatar.png" width="30" height="30" alt="Jony bristow">
                       </figure>
 
                       <div>
-                        <a href="#" class="author-name">mrs.prerna sharma</a>
+                        <a href="/Template/blog.html" class="author-name">mrs.prerna sharma</a>
 
                         <p class="author-title">marketing</p>
                       </div>
@@ -489,12 +489,12 @@
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">
+                    <a href="/Template/blog.html">
                       A good traveler has no fixed plans and is not intent on arriving.
                     </a>
                   </h3>
 
-                  <a href="#" class="btn-link">
+                  <a href="/Template/blog.html" class="btn-link">
                     <span>Read More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -521,7 +521,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('{{url_for(filename='./Image/footer-bg.png')}}')">
+  <footer class="footer" style="background-image: url('/Image/footer-bg.png')" id="contact">
     <div class="container">
 
       <div class="footer-top">
@@ -693,7 +693,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="js/script.js"></script>
 
   <!-- 
     - ionicon link
