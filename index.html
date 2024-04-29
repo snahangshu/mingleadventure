@@ -89,7 +89,7 @@
       -->
 
       <section class="section hero"
-        style="background-image: url('{{url_for('static',filename='./Image/hero-bg-bottom.png')}}) url('{{url_for('static',filename='./Image/hero-bg-top.png')}})">
+        style="background-image: url('{{url_for(filename='./Image/hero-bg-bottom.png')}}) url('{{url_for(filename='./Image/hero-bg-top.png')}})">
         <div class="container">
 
           <img src="{{url_for('static',filename='./Image/shape-1.png')}}" width="61" height="61" alt="Vector Shape" class="shape shape-1">
@@ -521,7 +521,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('{{url_for('static',filename='./Image/footer-bg.png')}}')">
+  <footer class="footer" style="background-image: url('{{url_for(filename='./Image/footer-bg.png')}}')">
     <div class="container">
 
       <div class="footer-top">
